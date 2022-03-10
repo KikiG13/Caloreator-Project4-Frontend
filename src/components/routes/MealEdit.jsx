@@ -23,7 +23,7 @@ export const MealEdit = () => {
     axios.get(`${apiUrl}/books/${id}`)
       .then(response => setMeal(response.data.book))
       .catch(console.error)
-  }, [])
+  }, [id])
 
   const handleChange = event => {
     console.log(event.target.name, event.target.value)
