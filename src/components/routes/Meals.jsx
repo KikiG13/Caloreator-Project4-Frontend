@@ -3,14 +3,14 @@ import axios from 'axios'
 import apiUrl from '../../apiConfig'
 import { Link } from 'react-router-dom'
 
-export const Meals = (user) => {
+export const Meals = ({ user }) => {
   const [meals, setMeals] = useState([])
 
   // if (!user) {
   //   return <Navigate to='/' />
   // }
 
-  useEffect((user) => {
+  useEffect(() => {
     return axios.get(`${apiUrl}/meals`, {
       headers: {
         Authorization: `Bearer ${user.token}`
