@@ -12,6 +12,7 @@ import ChangePassword from './components/auth/ChangePassword'
 import Home from '../src/components/routes/Home'
 import { MealCreate } from '../src/components/routes/MealCreate'
 import Meals from '../src/components/routes/Meals'
+import { MealEdit } from './components/routes/MealEdit'
 
 const App = () => {
   const [user, setUser] = useState(null)
@@ -65,6 +66,10 @@ const App = () => {
           <Route
             path='/meals'
             element={<Meals user={user}/> }
+          />
+          <Route
+            path='/meals/:id'
+            element={<MealEdit user={user}/> }
           />
 
         </Routes>
