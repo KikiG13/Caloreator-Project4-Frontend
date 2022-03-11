@@ -32,10 +32,14 @@ export const Meals = ({ user }) => {
   })
   return (
     <>
-      <h3>Meals:</h3>
-      <ul>
-        {renderedMeals}
-      </ul>
+    <div className='row'>
+      <div className='col-sm-10 col-md-8 mx-auto mt-5'>
+        <h3>Meals:</h3>
+        <ul>
+          {renderedMeals}
+        </ul>
+      </div>
+    </div>
     </>
   )
 }

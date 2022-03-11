@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import apiUrl from '../../apiConfig'
-import { Navigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useParams } from 'react-router-dom'
+import { Button } from 'react-bootstrap'
 import renderedMeals from '../routes/Meals'
 
 export const MealEdit = () => {
@@ -10,11 +11,11 @@ export const MealEdit = () => {
     name: '',
     description: '',
     photo: '',
-    calories: '',
-    fat: '',
-    sugar: '',
-    protein: '',
-    carbs: ''
+    calories: 0,
+    fat: 0,
+    sugar: 0,
+    protein: 0,
+    carbs: 0
   })
   const [updated, setUpdated] = useState(false)
   const { id } = useParams()
@@ -42,13 +43,21 @@ export const MealEdit = () => {
   if (updated) return <Navigate to={`/books/${id}`} />
 
   return (
-    <>
-      <h3>Meals:</h3>
-      <ul>
-        {renderedMeals}
-      </ul>
-      handleChange={handleChange}
-      handleSubmit={handleSubmit}
-    </>
+    <div className='row'>
+      <div className='col-sm-10 col-md-8 mx-auto mt-5'>
+        <h3>{meal.name}</h3>
+        <p>{meal.description}</p>
+        <p>{meal.photo}</p>
+        <p>{meal.calories}</p>
+        <p>{meal.fat}</p>
+        <p>{meal.sugar}</p>
+        <p>{meal.protein}</p>
+        <p>{meal.carbs}</p>
+        <Link to={`/meals/${id}/edit`}>
+            <Button variant='primary' type='submit'>Edit Meal</Button>
+        </Link>
+      </div>
+    </div>
+
   )
 }

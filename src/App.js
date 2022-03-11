@@ -11,8 +11,9 @@ import SignOut from './components/auth/SignOut'
 import ChangePassword from './components/auth/ChangePassword'
 import Home from '../src/components/routes/Home'
 import { MealCreate } from '../src/components/routes/MealCreate'
-import Meals from '../src/components/routes/Meals'
+import { Meals } from '../src/components/routes/Meals'
 import { MealEdit } from './components/routes/MealEdit'
+import { MealForm } from './components/shared/MealForm'
 
 const App = () => {
   const [user, setUser] = useState(null)
@@ -60,8 +61,8 @@ const App = () => {
             element={<Home />}
           />
           <Route
-            path='/meal'
-            element={<MealCreate user={user}/> }
+            path='/meals/create'
+            element={<MealCreate msgAlert={msgAlert} user={user} /> }
           />
           <Route
             path='/meals'
