@@ -4,6 +4,7 @@ import apiUrl from '../../apiConfig'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { Button } from 'react-bootstrap'
 import renderedMeals from '../routes/Meals'
+import MealForm from '../shared/MealForm'
 
 export const MealEdit = () => {
   const [meal, setMeal] = useState({
@@ -45,17 +46,12 @@ export const MealEdit = () => {
   return (
     <div className='row'>
       <div className='col-sm-10 col-md-8 mx-auto mt-5'>
-        <h3>{meal.name}</h3>
-        <p>{meal.description}</p>
-        <p>{meal.photo}</p>
-        <p>{meal.calories}</p>
-        <p>{meal.fat}</p>
-        <p>{meal.sugar}</p>
-        <p>{meal.protein}</p>
-        <p>{meal.carbs}</p>
-        <Link to={`/meals/${id}/edit`}>
-            <Button variant='primary' type='submit'>Edit Meal</Button>
-        </Link>
+        <h3>Update Meal</h3>
+        <MealForm
+          handleSubmit={handleSubmit}
+          handleChange={handleChange}
+          meal={meal}
+        />
       </div>
     </div>
 

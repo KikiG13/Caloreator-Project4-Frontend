@@ -12,22 +12,21 @@ import axios from 'axios'
 //   )
 // }
 
-// export const showMovie = (id
-//   , user) => {
-//   return axios.get(`${apiUrl}/movies/${id}/`, {
-//     headers: {
-//       Authorization: `Bearer ${user.token}`
-//     }
-//   })
-// }
+export const showMeal = (id, user) => {
+  return axios.get(`${apiUrl}/meals/${id}/`, {
+    headers: {
+      Authorization: `Bearer ${user.token}`
+    }
+  })
+}
 
-// export const deleteMovie = (id, user) => {
-//   return axios.delete(`${apiUrl}/movies/${id}`, {
-//     headers: {
-//       Authorization: `Bearer ${user.token}`
-//     }
-//   })
-// }
+export const deleteMeal = (id, user) => {
+  return axios.delete(`${apiUrl}/meals/${id}`, {
+    headers: {
+      Authorization: `Bearer ${user.token}`
+    }
+  })
+}
 
 // export const updateMovie = (id, title, director, user) => {
 //   return axios.patch(
