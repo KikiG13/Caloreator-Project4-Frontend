@@ -50,8 +50,6 @@ The planning stage is a step that I want to improve my ability in as I get more 
 
 ## Application Screenshot
 
-https://imgur.com/mt7y5fp
-
 <a href="https://imgur.com/mt7y5fp"><img src="https://i.imgur.com/mt7y5fp.png" title="source: imgur.com" /></a>
 
 ## Set up and Installation
