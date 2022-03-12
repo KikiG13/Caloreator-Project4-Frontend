@@ -61,8 +61,15 @@ const Meal = ({ user, msgAlert }) => {
     return (
       <div className='row'>
         <div className='col-sm-10 col-md-8 mx-auto mt-5'>
-          <h3>{meal.type}</h3>
-          <p>Name: {meal.name}</p>
+          <h3>{meal.name}</h3>
+          <p>Meal Type: {meal.type}</p>
+          <p>Description: {meal.description}</p>
+          <p>Photo: {meal.photo}</p>
+          <p>Calories: {meal.calories}</p>
+          <p>Fat: {meal.fat}</p>
+          <p>Sugar: {meal.sugar}</p>
+          <p>Protein: {meal.protein}</p>
+          <p>Carbohydrates: {meal.carbs}</p>
           <Button variant='danger' onClick={handleDeleteClick}>Delete Meal</Button>
           <Link to={`/meals/${id}/edit`}>
             <Button variant='primary' type='submit'>Update Meal</Button>

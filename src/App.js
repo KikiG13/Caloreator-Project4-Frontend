@@ -59,8 +59,8 @@ const App = () => {
           />
           <Route path='/'
             element={<Home />} />
-          <Route path='/meals' element={<Meals user={user}/> } />
-          <Route path='/meals/:id' element={<Meal user={user}/> } />
+          <Route path='/meals' element={<Meals msgAlert={msgAlert} user={user}/> } />
+          <Route path='/meals/:id' element={<Meal msgAlert={msgAlert} user={user}/> } />
           <Route path='/meals/create' element={<MealCreate msgAlert={msgAlert} user={user} /> } />
           <Route path='/meals/:id/edit' element={<MealEdit msgAlert={msgAlert} user={user} /> } />
         </Routes>
