@@ -47,3 +47,19 @@ The planning stage is a step that I want to improve my ability in as I get more 
 ## Wireframes:
 
 [Caloreator Wireframes](https://jamboard.google.com/d/1HwD16XW2I4VZ7Y3b_2rhZZ8l-UbUqIVKKvULeK1Ci_w/viewer?f=2)
+
+## Application Screenshot
+
+[Imgur](https://i.imgur.com/mt7y5fp.png)
+
+## Set up and Installation
+
+- Download this template.
+- Unzip and rename the template directory (unzip ~/Downloads/react-auth-template-main.zip).
+- Move into the new project and git init.
+- Empty README.md and fill with your own content.
+- Replace react-auth-template in package.json with your projects name.
+- In the "homepage" field of package.json replace git-name your (public) Github account name and replace repo-name with your repository name.
+- Install dependencies with npm install.
+- git add and git commit your changes.
+- Run the development server with npm start.

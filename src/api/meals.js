@@ -41,7 +41,6 @@ export const updateMeal = (id, meal, user) => {
 }
 
 export const createMeal = (meal, user) => {
-  console.log(createMeal)
   return axios.post(
     `${apiUrl}/meals`,
     { meal },

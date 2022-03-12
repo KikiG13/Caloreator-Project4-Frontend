@@ -12,7 +12,6 @@ const MealForm = ({ handleSubmit, meal, handleChange }) => (
         value={meal.type}
         onChange={event => {
           handleChange(event)
-          console.log(event)
         }}
       />
     </Form.Group>

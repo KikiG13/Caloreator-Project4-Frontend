@@ -56,25 +56,11 @@ export const MealEdit = ({ user, msgAlert }) => {
     }
   }
 
-  // useEffect(() => {
-  //   axios.get(`${apiUrl}/books/${id}`)
-  //     .then(response => setMeal(response.data.book))
-  //     .catch(console.error)
-  // }, [id])
-
   const handleChange = event => {
-    console.log(event.target.name, event.target.value)
     setMeal(prevMeal => {
       return { ...prevMeal, [event.target.name]: event.target.value }
     })
   }
-
-  // const handleSubmit = event => {
-  //   event.preventDefault()
-  //   axios.patch(`${apiUrl}/meals/${id}`, { meal })
-  //     .then(() => setUpdated(true))
-  //     .catch(console.error)
-  // }
 
   if (updated) return <Navigate to={`/books/${id}`} />
 
