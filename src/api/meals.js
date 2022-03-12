@@ -28,17 +28,17 @@ export const deleteMeal = (id, user) => {
   })
 }
 
-// export const updateMovie = (id, title, director, user) => {
-//   return axios.patch(
-//     `${apiUrl}/movies/${id}`,
-//     { movie: { title, director } },
-//     {
-//       headers: {
-//         Authorization: `Bearer ${user.token}`
-//       }
-//     }
-//   )
-// }
+export const updateMeal = (id, meal, user) => {
+  return axios.patch(
+    `${apiUrl}/meals/${id}`,
+    { meal },
+    {
+      headers: {
+        Authorization: `Bearer ${user.token}`
+      }
+    }
+  )
+}
 
 export const createMeal = (meal, user) => {
   console.log(createMeal)
