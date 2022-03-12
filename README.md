@@ -4,10 +4,7 @@
 My application allows the user to input any meal they consume with key nutrition facts.  Users that struggle with will power or would like to organize their food consumption onto a single program will enjoy and can benefit from using Caloreator.
 
 ## Description
-
-## Website
-
-
+With Caloreator you can input and keep track of your food consumption to help you match your diet goals.
 
 ## Application Links
 
