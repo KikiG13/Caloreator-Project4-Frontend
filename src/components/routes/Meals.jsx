@@ -24,9 +24,9 @@ export const Meals = ({ user }) => {
     return (
       <li key={meal._id}>
         <Link to={`/meals/${meal._id}`}>
-          <h6>{meal.type}</h6>
-        </Link>
         <p>{meal.name}</p>
+        </Link>
+          <h6>{meal.type}</h6>
       </li>
     )
   })
